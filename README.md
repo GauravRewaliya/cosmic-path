@@ -27,3 +27,10 @@ yarn dev
 ```sh
 yarn build
 ```
+
+## push build
+yarn build
+
+git add dist -f
+git commit -m "add dist to deploy"
+git subtree push --prefix dist origin gh-pages -f
