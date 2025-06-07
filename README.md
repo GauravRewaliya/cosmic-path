@@ -34,3 +34,8 @@ yarn build
 git add dist -f
 git commit -m "add dist to deploy"
 git subtree push --prefix dist origin gh-pages -f
+
+
+npm install tailwindcss @tailwindcss/vite   
+npm install -D tailwindcss@3 postcss auto-prefixer
+npx tailwindcss init -p
