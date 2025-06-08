@@ -1,10 +1,15 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <RouterView />
+  <div>
+    <Navbar />
+    <Hero />
+    <QuoteBanner />
+    <Testimonials />
+  </div>
 </template>
 
-<style scoped>
-</style>
+<script setup>
+import Navbar from './components/Navbar.vue'
+import Hero from './components/Hero.vue'
+import QuoteBanner from './components/QuoteBanner.vue'
+import Testimonials from './components/Testimonials.vue'
+</script>
