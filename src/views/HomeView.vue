@@ -1,13 +1,13 @@
 <template>
-  <div class="page-wrapper">
-    <!-- Sacred Background SVG -->
+  <div class="page-wrapper relative overflow-hidden">
+    <!-- Sacred Background -->
     <div class="sacred-bg">
       <img src="https://via.placeholder.com/800" alt="Mandala" class="bg-image" />
     </div>
 
     <!-- Intro Section -->
-    <section class="section intro">
-      <h1 class="title spiritual-font">Vyana Aura</h1>
+    <section class="section intro-section">
+      <h1 class="main-title">Vyana Aura</h1>
       <p class="subtitle">
         A sacred space for deep spiritual healing, soul guidance, and energy alignment.
         <br />Heal. Align. Transform.
@@ -15,7 +15,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="section">
+    <section class="section fade-up">
       <h2 class="section-heading">About Vyana Aura</h2>
       <p class="section-text">
         Founded by Vanya (Shafali Soni) — a seasoned soul guide, Tarot Reader, Reiki Grandmaster,
@@ -25,10 +25,10 @@
     </section>
 
     <!-- Services Section -->
-    <section class="section">
+    <section class="section fade-up">
       <h2 class="section-heading">Our Sacred Services</h2>
       <div class="service-list">
-        <div v-for="service in services" :key="service.title" class="service-card animate-fade-slide-up">
+        <div v-for="service in services" :key="service.title" class="service-card animate-fade">
           <h3 class="service-title">{{ service.icon }} {{ service.title }}</h3>
           <p class="service-desc">{{ service.description }}</p>
           <ul v-if="service.useCases" class="use-cases">
@@ -39,7 +39,7 @@
     </section>
 
     <!-- Vision Section -->
-    <section class="section">
+    <section class="section fade-up">
       <h2 class="section-heading">Our Vision</h2>
       <p class="section-text">
         "Heal. Align. Transform." We believe that when you align with your inner truth, everything around you begins to transform.
@@ -47,8 +47,8 @@
       </p>
     </section>
 
-    <!-- Who We Serve -->
-    <section class="section">
+    <!-- Who We Serve Section -->
+    <section class="section fade-up">
       <h2 class="section-heading">Who We Serve</h2>
       <ul class="section-text list-disc list-inside">
         <li>People feeling emotionally drained or energetically blocked</li>
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section">
+    <section class="section fade-up">
       <h2 class="section-heading">Connect With Us</h2>
       <p class="section-text">
         WhatsApp: <a href="https://api.whatsapp.com/send?phone=918889101484&text=hi" target="_blank" class="link-glow">+91 88891 01484</a><br />
@@ -68,14 +68,15 @@
       </p>
     </section>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Button -->
     <a
       href="https://api.whatsapp.com/send?phone=918889101484&text=hi"
       class="whatsapp-float"
       target="_blank"
       aria-label="Chat on WhatsApp"
     >
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-10 h-10" />    </a>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-10 h-10" />
+    </a>
   </div>
 </template>
 
