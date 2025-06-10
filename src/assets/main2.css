@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-  .main-layout {
-    @apply bg-gradient-to-b from-[#e27b7b] via-[#bdb32f] to-[#ECF0F1] min-h-screen text-gray-800 font-serif relative overflow-x-hidden;
-  }
+  /* .main-layout {
+    @apply bg-gradient-to-b from-maroon-900 via-lavender-200 to-ivory text-gray-800 min-h-screen font-serif;
+  } */
 
   .header {
     @apply text-center py-10;
@@ -35,9 +35,9 @@
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8;
   }
 
-  .service-card {
-    @apply bg-white/90 rounded-2xl shadow-xl p-6 border border-[#d4af37] transition-all duration-500 hover:scale-105 hover:shadow-2xl;
-  }
+  /* .service-card {
+    @apply bg-white/90 rounded-2xl shadow-xl p-6 border border-gold transition-all duration-500 hover:scale-105 hover:shadow-2xl;
+  } */
 
   .service-title {
     @apply text-xl font-semibold text-maroon mb-3;
@@ -57,18 +57,6 @@
 
   .footer-text {
     @apply text-sm text-ivory;
-  }
-
-  .whatsapp-button {
-    @apply fixed bottom-5 right-5 bg-green-500 text-white text-2xl rounded-full p-4 shadow-lg hover:scale-110 transition-all duration-300 z-50;
-  }
-
-  .animate-fade-in {
-    animation: fadeIn 1.5s ease-in-out both;
-  }
-
-  .animate-slide-up {
-    animation: slideUp 1.2s ease-out both;
   }
 }
 
@@ -91,27 +79,5 @@
 
   .bg-maroon-900 {
     background-color: #3d0e0e;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
