@@ -1,30 +1,38 @@
 <template>
-  <main class="main-layout">
-    <!-- Header -->
-    <header class="header">
-      <h1 class="site-title">Vyana Aura</h1>
-      <p class="site-subtitle">Heal. Align. Transform.</p>
-    </header>
+  <div class="page-wrapper">
+    <!-- Sacred Background SVG -->
+    <div class="sacred-bg">
+      <img src="https://via.placeholder.com/800" alt="Mandala" class="bg-image" />
+    </div>
+
+    <!-- Intro Section -->
+    <section class="section intro">
+      <h1 class="title spiritual-font">Vyana Aura</h1>
+      <p class="subtitle">
+        A sacred space for deep spiritual healing, soul guidance, and energy alignment.
+        <br />Heal. Align. Transform.
+      </p>
+    </section>
 
     <!-- About Section -->
     <section class="section">
-      <h2 class="section-title">✨ About Vyana Aura</h2>
+      <h2 class="section-heading">About Vyana Aura</h2>
       <p class="section-text">
-        Vyana Aura is a sacred space for deep spiritual healing, soul guidance, and energy alignment.
-        Founded by Vanya (Shafali Soni), a seasoned Tarot Reader, Reiki Grandmaster, Numerologist, Spiritual Healer, and more,
-        it offers a compassionate and transformative space to heal, align, and rise.
+        Founded by Vanya (Shafali Soni) — a seasoned soul guide, Tarot Reader, Reiki Grandmaster,
+        Numerologist, Spiritual Healer, Vastu Consultant, Hypnosis Expert, and Akashic Record Reader —
+        Vyana Aura blends ancient wisdom with intuitive insight to help individuals rediscover their power and path.
       </p>
     </section>
 
     <!-- Services Section -->
     <section class="section">
-      <h2 class="section-title">🌼 Services Offered</h2>
-      <div class="services-grid">
-        <div v-for="(service, index) in services" :key="index" class="service-card">
+      <h2 class="section-heading">Our Sacred Services</h2>
+      <div class="service-list">
+        <div v-for="service in services" :key="service.title" class="service-card animate-fade-slide-up">
           <h3 class="service-title">{{ service.icon }} {{ service.title }}</h3>
-          <p class="service-description">{{ service.description }}</p>
-          <ul v-if="service.uses" class="service-uses">
-            <li v-for="(use, i) in service.uses" :key="i">• {{ use }}</li>
+          <p class="service-desc">{{ service.description }}</p>
+          <ul v-if="service.useCases" class="use-cases">
+            <li v-for="use in service.useCases" :key="use">• {{ use }}</li>
           </ul>
         </div>
       </div>
@@ -32,77 +40,88 @@
 
     <!-- Vision Section -->
     <section class="section">
-      <h2 class="section-title">🌟 Vision & Motto</h2>
-      <p class="section-text italic text-lg">
-        “Heal. Align. Transform.”  
-      </p>
+      <h2 class="section-heading">Our Vision</h2>
       <p class="section-text">
-        When you align with your inner truth, everything around you transforms. Vyana Aura is here to guide you back to your natural state of wholeness through sacred tools, soulful connection, and energy mastery.
+        "Heal. Align. Transform." We believe that when you align with your inner truth, everything around you begins to transform.
+        Vyana Aura is here to help you return to your natural state of wholeness through sacred tools, soulful connection, and energy mastery.
       </p>
+    </section>
+
+    <!-- Who We Serve -->
+    <section class="section">
+      <h2 class="section-heading">Who We Serve</h2>
+      <ul class="section-text list-disc list-inside">
+        <li>People feeling emotionally drained or energetically blocked</li>
+        <li>Professionals seeking spiritual alignment or clarity</li>
+        <li>Individuals on a healing or awakening journey</li>
+        <li>Anyone curious about energy work, name vibrations, or soul guidance</li>
+        <li>Homes and businesses needing Vastu energy balancing</li>
+      </ul>
     </section>
 
     <!-- Contact Section -->
     <section class="section">
-      <h2 class="section-title">📩 Contact</h2>
+      <h2 class="section-heading">Connect With Us</h2>
       <p class="section-text">
-        WhatsApp / Call: +91-XXXXXXXXXX  
-        <br />
-        Email: vyanaaura@example.com  
-        <br />
-        Location: India (Online & On-site Sessions)
+        WhatsApp: <a href="https://api.whatsapp.com/send?phone=918889101484&text=hi" target="_blank" class="link-glow">+91 88891 01484</a><br />
+        Email: <a href="mailto:support@vyanaaura.com" class="link-glow">support@vyanaaura.com</a>
       </p>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p class="footer-text">© 2025 Vyana Aura – Designed with spirit & soul</p>
-    </footer>
-  </main>
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://api.whatsapp.com/send?phone=918889101484&text=hi"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-10 h-10" />    </a>
+  </div>
 </template>
 
 <script setup>
 const services = [
   {
-    icon: "🔮",
-    title: "Tarot Reading",
-    description: "Personalized tarot sessions for love, career, and soul guidance.",
-    uses: ["Love & Relationship", "Career Decisions", "Spiritual Blocks", "Future Pathway"],
+    icon: '🔮',
+    title: 'Tarot Reading',
+    description: 'Receive intuitive messages and divine insights through personalized Tarot sessions.',
+    useCases: ['Love & Relationship Guidance', 'Career Decisions', 'Spiritual Blocks', 'Future Pathway Reading']
   },
   {
-    icon: "🌕",
-    title: "Reiki Healing",
-    description: "Channeling universal energy for emotional and spiritual healing.",
-    uses: ["Chakra Balancing", "Aura Cleansing", "Energy Shielding", "Distance Healing"],
+    icon: '🌕',
+    title: 'Reiki Healing',
+    description: 'A powerful energy therapy that channels universal life force to heal imbalances.',
+    useCases: ['Chakra Balancing', 'Aura Cleansing', 'Energy Shielding', 'Distance & In-Person Healing']
   },
   {
-    icon: "✍️",
-    title: "Name Correction",
-    description: "Numerology-based correction to align your name with cosmic vibrations.",
-    uses: ["Career Growth", "Life Harmony", "Emotional Balance", "Success Activation"],
+    icon: '✍️',
+    title: 'Name Correction',
+    description: 'Analyze and adjust names using Numerology to attract harmony, success, and alignment.',
+    useCases: ['Career Growth', 'Relationship Harmony', 'Emotional Stability', 'Life Path Activation']
   },
   {
-    icon: "🧱",
-    title: "Vastu Consultation",
-    description: "Harmonizing spaces through ancient Vastu energy principles.",
-    uses: ["Homes", "Offices", "Shops", "Online/Offline Consultations"],
+    icon: '🧱',
+    title: 'Vastu Consultation',
+    description: 'Rebalance home or workspace using traditional Vastu principles for peace and prosperity.',
+    useCases: ['Homes', 'Offices', 'Shops', 'Online and On-Site Consultations']
   },
   {
-    icon: "🌀",
-    title: "Hypnosis Therapy",
-    description: "Access the subconscious to break patterns & heal trauma.",
-    uses: ["Fear Release", "Past Life Regression", "Inner Child Healing", "Self-Worth"],
+    icon: '🌀',
+    title: 'Hypnosis Therapy',
+    description: 'Safe, guided sessions to break patterns and create deep inner transformation.',
+    useCases: ['Fear & Phobia Removal', 'Past Life Regression', 'Self-Esteem Boost', 'Inner Child Healing']
   },
   {
-    icon: "📜",
-    title: "Akashic Record Reading",
-    description: "Explore your soul’s blueprint, past lives, and karmic story.",
-    uses: ["Karmic Cleansing", "Soul Awakening", "Purpose Discovery", "Energy Recalibration"],
+    icon: '📜',
+    title: 'Akashic Record Reading',
+    description: 'Access the soul’s divine blueprint for karmic clarity and higher purpose.',
+    useCases: ['Karmic Cleansing', 'Purpose Awakening', 'Energy Recalibration', 'Spiritual Empowerment']
   },
   {
-    icon: "🌸",
-    title: "Spiritual Healing",
-    description: "Realign with your soul through aura healing and intuitive lightwork.",
-    uses: ["Aura Scanning", "Light Activation", "Energy Shifts", "Soul Realignment"],
-  },
-];
+    icon: '🌸',
+    title: 'Spiritual Healing',
+    description: 'Energetic scanning, lightwork, and realignment to harmonize with universal flow.',
+    useCases: ['Aura Healing', 'Lightwork', 'Soul Realignment', 'Intuitive Energy Shifts']
+  }
+]
 </script>
