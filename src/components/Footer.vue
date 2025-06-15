@@ -34,22 +34,20 @@
         <div class="text-center md:text-right">
           <h4 class="text-lg font-semibold mb-4 text-golden">Connect</h4>
           <div class="space-y-2 text-sm">
-            <p class="text-ivory/80">📱 WhatsApp: +1 (555) 123-4567</p>
-            <p class="text-ivory/80">✉️ hello@vyanaaura.com</p>
-            <div class="flex justify-center md:justify-end space-x-4 mt-4">
+            <p class="text-ivory/80"><i class="fab fa-whatsapp"></i> WhatsApp: 8839479884</p>
+            <p class="text-ivory/80"><i class="fas fa-envelope"></i> hello@vyanaaura.com</p>            <div class="flex justify-center md:justify-end space-x-4 mt-4">
               <a href="#" class="text-ivory/80 hover:text-golden transition-colors">
                 <span class="sr-only">Instagram</span>
-                📷
+                <i class="fab fa-instagram text-xl"></i>
               </a>
               <a href="#" class="text-ivory/80 hover:text-golden transition-colors">
                 <span class="sr-only">Facebook</span>
-                📘
+                <i class="fab fa-facebook text-xl"></i>
               </a>
               <a href="#" class="text-ivory/80 hover:text-golden transition-colors">
                 <span class="sr-only">YouTube</span>
-                📺
-              </a>
-            </div>
+                <i class="fab fa-youtube text-xl"></i>
+              </a>            </div>
           </div>
         </div>
       </div>

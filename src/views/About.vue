@@ -3,37 +3,39 @@ const journey = [
   {
     year: '2015',
     title: 'Spiritual Awakening',
-    description: 'My journey began with a profound spiritual awakening that opened my heart to energy healing.'
+    description: 'My journey began with a profound spiritual awakening that opened my heart to energy healing and intuitive work.'
   },
   {
     year: '2017',
-    title: 'Reiki Mastery',
-    description: 'Completed Reiki Master certification and began practicing energy healing professionally.'
+    title: 'Reiki Grandmaster',
+    description: 'Achieved Reiki Grandmaster certification and began offering professional healing services.'
   },
   {
     year: '2019',
-    title: 'Tarot & Intuitive Reading',
-    description: 'Developed deep intuitive abilities and began offering tarot and psychic readings.'
+    title: 'Intuitive Mastery',
+    description: 'Deepened my practice in Tarot, Numerology, and Name Correction, expanding my spiritual services.'
   },
   {
     year: '2021',
-    title: 'Akashic Records Training',
-    description: 'Learned to access the Akashic Records, providing soul-level healing and guidance.'
+    title: 'Advanced Healing Modalities',
+    description: 'Mastered Hypnosis, Akashic Records reading, and advanced spiritual healing techniques.'
   },
   {
     year: '2023',
     title: 'Vyana Aura Founded',
-    description: 'Established Vyana Aura to create a sacred space for transformation and healing.'
+    description: 'Established Vyana Aura as a sacred space for soul transformation and spiritual awakening.'
   }
 ]
 
 const certifications = [
-  'Usui Reiki Master Teacher',
+  'Reiki Grandmaster',
   'Certified Akashic Records Reader',
-  'Advanced Tarot & Oracle Card Reader',
+  'Professional Tarot Reader',
   'Vastu Shastra Consultant',
-  'Crystal Healing Practitioner',
-  'Chakra Balancing Specialist'
+  'Numerology Expert',
+  'Name Correction Specialist',
+  'Hypnosis Expert',
+  'Spiritual Healer'
 ]
 </script>
 
@@ -47,7 +49,7 @@ const certifications = [
         </div>
         <h1 class="section-title">About the Healer</h1>
         <p class="text-xl text-maroon/80 max-w-3xl mx-auto leading-relaxed">
-          A journey of spiritual awakening, healing, and service to the divine light within us all
+          A journey of spiritual awakening, healing, and serving as a bridge between the physical and spiritual realms
         </p>
       </section>
 
@@ -57,32 +59,28 @@ const certifications = [
           <!-- Image Placeholder -->
           <div class="order-2 lg:order-1">
             <div class="card-service h-96 flex items-center justify-center bg-gradient-to-br from-lightgold/20 to-darkgold/10">
-              <div class="text-center">
-                <div class="text-6xl mb-4">🧘‍♀️</div>
-                <p class="text-maroon/60">Sacred healing portrait</p>
-              </div>
+              <!-- <img src="@/assets/images/lotus-meditation.jpg" alt="Lotus Meditation" class="object-cover w-full h-full rounded-lg"> -->
+               <img src="https://placehold.co/600x400" alt="Vyana Aura Logo">
             </div>
           </div>
 
           <!-- About Text -->
           <div class="order-1 lg:order-2 space-y-6">
-            <h2 class="text-3xl font-serif font-bold text-maroon">Namaste, I'm Sarah</h2>
+            <h2 class="text-3xl font-serif font-bold text-maroon">Namaste, I'm Vanya</h2>
             <p class="text-lg text-maroon/80 leading-relaxed">
-              My spiritual journey began over a decade ago when I experienced a profound awakening 
-              that forever changed my understanding of life, energy, and healing. This sacred 
-              transformation led me to dedicate my life to helping others discover their own 
-              inner wisdom and healing potential.
+              Born as Shafali Soni, my spiritual path led me to the name Vanya, reflecting my calling to serve as a bridge 
+              between the seen and unseen realms. As a soul guide, healer, and lightworker, I'm here to help you remember 
+              who you truly are.
             </p>
             <p class="text-lg text-maroon/80 leading-relaxed">
-              Through years of study, practice, and deep spiritual work, I've developed a unique 
-              approach that combines ancient wisdom traditions with modern healing modalities. 
-              My mission is to create a safe, sacred space where souls can heal, grow, and 
-              remember their divine essence.
+              Through years of experience and intuitive mastery, I've developed expertise in multiple healing modalities 
+              including Tarot Reading, Reiki, Numerology, Name Correction, Vastu Consultation, Hypnosis, and Akashic 
+              Record Reading. Each of these practices has been integral to my own healing and awakening journey.
             </p>
             <p class="text-lg text-maroon/80 leading-relaxed">
-              Every session is guided by love, intuition, and the highest good of all involved. 
-              I believe that healing happens in the space between souls, where authentic 
-              connection and divine love can work their magic.
+              Whether you're carrying past karmic weight, feeling stuck in your present, or seeking intuitive guidance, 
+              I welcome you with warmth, compassion, and zero judgment. Every session is a sacred experience that blends 
+              intuition, ancient sciences, and energetic precision.
             </p>
           </div>
         </div>
@@ -111,7 +109,7 @@ const certifications = [
 
       <!-- Certifications -->
       <section class="py-16">
-        <h2 class="section-title mb-16">Certifications & Training</h2>
+        <h2 class="section-title mb-16">Certifications & Expertise</h2>
         <div class="max-w-4xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div v-for="cert in certifications" :key="cert" class="card-service text-center">
@@ -128,9 +126,9 @@ const certifications = [
           <h2 class="section-title mb-8">My Healing Philosophy</h2>
           <div class="card-testimonial">
             <p class="text-xl text-maroon/80 leading-relaxed italic mb-6">
-              "Every soul carries within it the seeds of healing, wisdom, and divine love. 
-              My role is simply to hold sacred space and provide gentle guidance as you 
-              reconnect with your own inner healer and remember who you truly are."
+              "At Vyana Aura, you will not just receive answers — you will feel seen, held, and energetically transformed. 
+              Each soul is unique, and I honor that with a personalized, heart-centered approach that blends intuition, 
+              ancient sciences, and energetic precision."
             </p>
             <div class="flex justify-center space-x-2">
               <span class="text-darkgold text-xl">🌟</span>

@@ -40,23 +40,23 @@ const contactMethods = [
   {
     icon: '📱',
     title: 'WhatsApp',
-    value: '+1 (555) 123-4567',
+    value: '8839479884',
     action: 'Message Now',
-    link: 'https://wa.me/15551234567'
+    link: 'https://wa.me/918839479884'
   },
   {
     icon: '✉️',
     title: 'Email',
-    value: 'hello@vyanaaura.com',
+    value: 'shelf@vyanaaura.com',
     action: 'Send Email',
     link: 'mailto:hello@vyanaaura.com'
   },
   {
     icon: '📍',
     title: 'Location',
-    value: 'Sacred Healing Studio\nLos Angeles, CA',
+    value: 'Saket Nagar, Indore, Madhya Pradesh 452018',
     action: 'Get Directions',
-    link: '#'
+    link: 'https://maps.app.goo.gl/7SEQtRP4MTomEACC6'
   },
   {
     icon: '🕐',
@@ -113,7 +113,9 @@ const faqs = [
             <p class="text-sm text-maroon/70 mb-4 whitespace-pre-line">{{ method.value }}</p>
             <a :href="method.link" 
                :class="method.link.startsWith('http') ? 'btn-primary' : 'btn-secondary'"
-               class="text-sm px-4 py-2 inline-block">
+               class="text-sm px-4 py-2 inline-block"
+               target="_blank"
+               rel="noopener noreferrer">
               {{ method.action }}
             </a>
           </div>
@@ -133,7 +135,7 @@ const faqs = [
                 <div class="space-y-3 text-sm text-maroon/80">
                   <p class="flex items-center">
                     <span class="text-gold mr-3">📍</span>
-                    123 Healing Way, Los Angeles, CA 90210
+                    Saket Nagar, Indore, Madhya Pradesh 452018
                   </p>
                   <p class="flex items-center">
                     <span class="text-gold mr-3">🕐</span>
@@ -168,7 +170,7 @@ const faqs = [
                   If you're experiencing a spiritual emergency or urgent need for guidance, 
                   please reach out immediately via WhatsApp or call our emergency line.
                 </p>
-                <a href="https://wa.me/15551234567" class="btn-primary inline-block">
+                <a href="https://wa.me/918839479884" class="btn-primary inline-block">
                   WhatsApp Now
                 </a>
               </div>
@@ -193,10 +195,10 @@ const faqs = [
         <h2 class="section-subtitle mb-12">Find Our Sacred Space</h2>
         <div class="max-w-4xl mx-auto">
           <div class="card-service h-64 flex items-center justify-center bg-gradient-to-br from-lavender/20 to-gold/10">
-            <div class="text-center">
+            <div class="text-center cursor-pointer" @click="window.open('https://maps.app.goo.gl/7SEQtRP4MTomEACC6', '_blank')">
               <div class="text-4xl mb-4">🗺️</div>
               <p class="text-maroon/60">Interactive map coming soon</p>
-              <p class="text-sm text-maroon/50">123 Healing Way, Los Angeles, CA 90210</p>
+              <p class="text-sm text-maroon/50">Saket Nagar, Indore, Madhya Pradesh 452018</p>
             </div>
           </div>
         </div>

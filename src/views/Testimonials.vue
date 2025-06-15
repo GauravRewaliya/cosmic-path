@@ -3,47 +3,12 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const testimonials = [
   {
-    name: 'Emily Rodriguez',
-    service: 'Akashic Records Reading',
-    rating: 5,
-    text: 'Sarah\'s reading completely shifted my perspective on life. The insights I received about my soul\'s purpose were profound and have guided me toward making positive changes. I feel more aligned than ever before.',
-    location: 'Los Angeles, CA'
-  },
-  {
-    name: 'Michael Chen',
-    service: 'Reiki Healing',
-    rating: 5,
-    text: 'After just one Reiki session with Sarah, I felt a deep sense of peace I hadn\'t experienced in years. The chronic stress and anxiety I was carrying melted away. Her healing touch is truly gifted.',
-    location: 'New York, NY'
-  },
-  {
-    name: 'Jessica Thompson',
+    name: 'Radhika Sharma',
     service: 'Tarot Reading',
     rating: 5,
-    text: 'Sarah\'s tarot reading was incredibly accurate and insightful. She helped me understand the patterns in my relationships and gave me practical guidance that I still use today. Highly recommended!',
-    location: 'Austin, TX'
+    text: 'Shafali\'s reading completely shifted my perspective on life. The insights I received about my soul\'s purpose were profound and have guided me toward making positive changes. I feel more aligned than ever before.',
+    location: 'Indore, India'
   },
-  {
-    name: 'David Kumar',
-    service: 'Vastu Consultation',
-    rating: 5,
-    text: 'The Vastu consultation transformed our home\'s energy completely. Within weeks of implementing Sarah\'s suggestions, we noticed improved harmony in our family and unexpected opportunities coming our way.',
-    location: 'San Francisco, CA'
-  },
-  {
-    name: 'Amanda Foster',
-    service: 'Past Life Regression',
-    rating: 5,
-    text: 'The past life regression session was life-changing. Understanding the root causes of my fears from past lives allowed me to heal and move forward with confidence. Sarah created such a safe, sacred space.',
-    location: 'Miami, FL'
-  },
-  {
-    name: 'Robert Williams',
-    service: 'Crystal Healing',
-    rating: 5,
-    text: 'I was skeptical about crystal healing, but Sarah\'s session was amazing. I felt energy blockages release and left feeling lighter and more balanced. The crystals she recommended continue to support my healing.',
-    location: 'Seattle, WA'
-  }
 ]
 
 const currentIndex = ref(0)
