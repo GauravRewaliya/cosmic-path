@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer components {
   .btn-primary {
@@ -10,7 +11,7 @@
   }
   
   .btn-secondary {
-    @apply border-2 border-darkgold text-darkgold font-semibold px-6 py-3 rounded-xl hover:bg-darkgold hover:text-maroon transition-all duration-300;
+    @apply btn-primary
   }
   
   .card-service {

@@ -4,7 +4,7 @@ const services = [
     title: 'Tarot Reading',
     icon: '🔮',
     duration: '60 minutes',
-    price: '$75',
+    price: '₹75',
     description: 'Gain deep insights into your life path, relationships, and spiritual journey through the ancient wisdom of tarot cards.',
     includes: [
       'In-depth card reading',
@@ -17,7 +17,7 @@ const services = [
     title: 'Reiki Energy Healing',
     icon: '✨',
     duration: '90 minutes',
-    price: '$90',
+    price: '₹90',
     description: 'Experience profound relaxation and healing as universal life force energy flows through gentle touch and intention.',
     includes: [
       'Full body energy healing',
@@ -30,7 +30,7 @@ const services = [
     title: 'Vastu Consultation',
     icon: '🏠',
     duration: '2 hours',
-    price: '$150',
+    price: '₹150',
     description: 'Harmonize your living or working space with ancient architectural principles to enhance prosperity and well-being.',
     includes: [
       'Space analysis',
@@ -43,7 +43,7 @@ const services = [
     title: 'Akashic Records Reading',
     icon: '📜',
     duration: '75 minutes',
-    price: '$120',
+    price: '₹120',
     description: 'Access your soul\'s eternal wisdom and past-life insights for deep healing and spiritual understanding.',
     includes: [
       'Soul records access',
@@ -56,7 +56,7 @@ const services = [
     title: 'Crystal Healing Session',
     icon: '💎',
     duration: '60 minutes',
-    price: '$85',
+    price: '₹85',
     description: 'Harness the powerful vibrations of crystals to balance your energy centers and promote healing.',
     includes: [
       'Crystal grid therapy',
@@ -69,7 +69,7 @@ const services = [
     title: 'Spiritual Life Coaching',
     icon: '🌟',
     duration: '90 minutes',
-    price: '$110',
+    price: '₹110',
     description: 'Receive personalized guidance to align your life with your soul\'s purpose and highest potential.',
     includes: [
       'Soul purpose discovery',
@@ -82,7 +82,7 @@ const services = [
     title: 'Past Life Regression',
     icon: '🌀',
     duration: '2 hours',
-    price: '$160',
+    price: '₹160',
     description: 'Journey into your past lives to understand current patterns and release limiting beliefs.',
     includes: [
       'Guided regression',
@@ -95,7 +95,7 @@ const services = [
     title: 'Chakra Balancing',
     icon: '🌈',
     duration: '75 minutes',
-    price: '$95',
+    price: '₹95',
     description: 'Restore harmony to your energy centers through sound, color, and energy healing techniques.',
     includes: [
       'Chakra assessment',
@@ -110,24 +110,24 @@ const packs = [
   {
     title: 'Spiritual Awakening pack',
     sessions: '3 Sessions',
-    price: '$285',
-    originalPrice: '$315',
+    price: '₹285',
+    originalPrice: '₹315',
     description: 'Perfect for beginners seeking spiritual guidance and healing.',
     includes: ['Tarot Reading', 'Reiki Healing', 'Chakra Balancing']
   },
   {
     title: 'Deep Healing Journey',
     sessions: '5 Sessions',
-    price: '$450',
-    originalPrice: '$540',
+    price: '₹450',
+    originalPrice: '₹540',
     description: 'Comprehensive healing for profound transformation.',
     includes: ['Akashic Records', 'Past Life Regression', 'Reiki', 'Crystal Healing', 'Spiritual Coaching']
   },
   {
     title: 'Monthly Spiritual Support',
     sessions: 'Monthly',
-    price: '$200/month',
-    originalPrice: '$240',
+    price: '₹200/month',
+    originalPrice: '₹240',
     description: 'Ongoing spiritual guidance and energy maintenance.',
     includes: ['Monthly Tarot Reading', 'Reiki Session', 'Email Support', 'Priority Booking']
   }
@@ -190,7 +190,7 @@ const packs = [
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="pack in packs" :key="pack.title" class="card-service text-center relative group">
             <div v-if="pack.originalPrice" class="absolute top-4 right-4 bg-gold text-maroon text-xs font-bold px-2 py-1 rounded-full">
-              SAVE {{ Math.round((parseInt(pack.originalPrice.replace('$', '')) - parseInt(pack.price.replace('$', '').replace('/month', ''))) / parseInt(pack.originalPrice.replace('$', '')) * 100) }}%
+              SAVE {{ Math.round((parseInt(pack.originalPrice.replace('₹', '')) - parseInt(pack.price.replace('₹', '').replace('/month', ''))) / parseInt(pack.originalPrice.replace('₹', '')) * 100) }}%
             </div>
             
             <div class="text-3xl mb-4">💫</div>
